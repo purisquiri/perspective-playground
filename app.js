@@ -21,7 +21,8 @@ const vm = Vue.createApp({
   },
   methods: {
     reset() {
-      (this.perspective = 100),
+      alert("You are about to reset the values"),
+        (this.perspective = 100),
         (this.rotateX = 0),
         (this.rotateY = 0),
         (this.rotateZ = 0);
@@ -37,6 +38,7 @@ const vm = Vue.createApp({
       el.select();
       document.execCommand("copy");
       document.body.removeChild(el);
+      alert("congratulation your copy the values, it on your clipboard now");
     },
   },
 }).mount("#app");
