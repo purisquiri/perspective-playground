@@ -38,7 +38,7 @@ const vm = Vue.createApp({
       el.select();
       document.execCommand("copy");
       document.body.removeChild(el);
-      alert("congratulation your copy the values, it on your clipboard now");
+      alert("you have all the values copied on your clipboard");
     },
   },
 }).mount("#app");
